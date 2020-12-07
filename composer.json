@@ -1,0 +1,15 @@
+{
+    "name": "himanshupurohit/orion",
+    "authors": [
+        {
+            "name": "Himanshu Purohit",
+            "email": "himanshu1203@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "app\\": "./"
+        }
+    },
+    "require": {}
+}
