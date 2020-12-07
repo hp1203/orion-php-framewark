@@ -2,7 +2,7 @@
 
 namespace app\core;
 /**
- * Class Router
+ * Class Request
  * 
  * @author Himanshu Purohit <himanshu1203@gmail.com>
  * @package app\core
