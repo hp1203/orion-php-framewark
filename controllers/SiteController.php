@@ -2,7 +2,7 @@
 
 namespace app\controllers;
 use app\core\Application;
-
+use app\core\Controller;
 /**
  * Class SiteController
  * 
@@ -10,19 +10,19 @@ use app\core\Application;
  * @package app\controllers
  */
 
-class SiteController 
+class SiteController extends Controller
 {
     public function index()
     {
         $params = [
             'name' => 'Himanshu Purohit',
         ];
-        return Application::$app->router->renderView('home', $params);
+        return $this->render('home', $params);
     }
 
     public function contact()
     {
-        return Application::$app->router->renderView('contact');
+        return $this->render('contact');
     }
 
 
