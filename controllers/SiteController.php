@@ -3,6 +3,7 @@
 namespace app\controllers;
 use app\core\Application;
 use app\core\Controller;
+use app\core\Request;
 /**
  * Class SiteController
  * 
@@ -26,8 +27,10 @@ class SiteController extends Controller
     }
 
 
-    public function store()
+    public function store(Request $request)
     {
+        $body = $request->getBody();
+        var_dump($body);
         return "Handling Submitted Data";
     }
 }
