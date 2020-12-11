@@ -7,32 +7,32 @@
                 <div class="row mb-3">
                     <div class="col-md-6 col-sm-12">
                         <label for="inputFirstName" class="visually-hidden">First Name</label>
-                        <input type="text" id="inputFirstName" class="form-control" placeholder="First Name" required="" autofocus="" name="first_name">
+                        <input type="text" id="inputFirstName" class="form-control" placeholder="First Name"  autofocus="" name="first_name">
                     </div>
                     <div class="col-md-6 col-sm-12">
                         <label for="inputLastName" class="visually-hidden">Last Name</label>
-                        <input type="text" id="inputLastName" class="form-control" placeholder="Last Name" required="" autofocus="" name="last_name">
+                        <input type="text" id="inputLastName" class="form-control" placeholder="Last Name"  autofocus="" name="last_name">
                     </div>
                 </div>
                     
                 <div class="row mb-3">
                     <div class="col-md-12 col-sm-12">
                         <label for="inputEmail" class="visually-hidden">Email address</label>
-                        <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required="" autofocus="" name="email">
+                        <input type="email" id="inputEmail" class="form-control" placeholder="Email address"  autofocus="" name="email">
                     </div>
                 </div>
                 
                 <div class="row mb-3">
                     <div class="col-md-12 col-sm-12">
                     <label for="inputPassword" class="visually-hidden">Password</label>
-                  <input type="password" id="inputPassword" class="form-control" placeholder="Password" required="" name="password">
+                  <input type="password" id="inputPassword" class="form-control" placeholder="Password"  name="password">
                     </div>
                 </div>
     
                 <div class="row mb-3">
                     <div class="col-md-12 col-sm-12">
                         <label for="inputConfirmPassword" class="visually-hidden">Confirm Password</label>
-                        <input type="password" id="inputConfirmPassword" class="form-control" placeholder="Confirm Password" required="" name="confirm_password">
+                        <input type="password" id="inputConfirmPassword" class="form-control" placeholder="Confirm Password"  name="confirm_password">
                     </div>
                 </div>
               <div class="checkbox mb-3">
