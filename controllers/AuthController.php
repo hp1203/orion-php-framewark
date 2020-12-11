@@ -15,14 +15,17 @@ class AuthController extends Controller
 {
     public function login()
     {   
+        $this->setLayout('auth');
         return $this->render('login');
     }
 
     public function register(Request $request)
     {
         if($request->isPost()){
-            return 'Submitted Data';
+            $body = $request->getBody();
+            var_dump($body);
         }
+        $this->setLayout('auth');
         return $this->render('register');
     }
 }

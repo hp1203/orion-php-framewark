@@ -1,7 +1,7 @@
 <main class="form-signin text-center">
     <div class="card shadow-sm mb-5 bg-white">
         <div class="card-body">
-            <form>
+            <form action="" method="post">
               <img class="mb-4" src="https://getbootstrap.com/docs/5.0/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
               <h1 class="h3 mb-3 fw-normal">Register</h1>
                 <div class="row mb-3">
