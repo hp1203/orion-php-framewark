@@ -1,0 +1,32 @@
+<?php 
+
+namespace app\core\form;
+
+use app\core\Model;
+use app\core\form\Field;
+
+/**
+ * Class Form
+ * 
+ * @author Himanshu Purohit <himanshu1203@gmail.com>
+ * @package app\core\form
+ */
+
+ class Form 
+ {
+    public static function begin($action, $method)
+    {
+        echo sprintf('<form action="%s" method="%s">', $action, $method);
+        return new Form();
+    }
+
+    public static function end()
+    {
+        return '</form>';
+    }
+
+    public function field(Model $model, $attribute)
+    {
+        return new Field($model, $attribute);
+    }
+ }
