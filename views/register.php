@@ -2,13 +2,6 @@
     <div class="card shadow-sm mb-5 bg-white">
         <div class="card-body">
         <?php $form = \app\core\form\Form::begin('','post'); ?>
-            <?php echo $form->field($model,'first_name'); ?>
-            <?php echo $form->field($model,'last_name'); ?>
-            <?php echo $form->field($model,'email'); ?>
-            <?php echo $form->field($model,'password'); ?>
-            <?php echo $form->field($model,'confirm_password'); ?>
-        <?php echo \app\core\form\Form::end(); ?>
-        <?php $form = \app\core\form\Form::begin('','post'); ?>
               <img class="mb-4" src="https://getbootstrap.com/docs/5.0/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
               <h1 class="h3 mb-3 fw-normal">Register</h1>
                 <div class="row mb-3">

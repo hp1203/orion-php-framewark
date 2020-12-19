@@ -2,13 +2,14 @@
 
 namespace app\models;
 use app\core\Model;
+use app\core\DbModel;
 /**
- * Class RegisterModel
+ * Class User
  * 
  * @author Himanshu Purohit <himanshu1203@gmail.com>
  * @package app\models
  */
-class RegisterModel extends Model
+class User extends DbModel
 {
     public string $first_name = "";
     public string $last_name = "";
@@ -16,9 +17,20 @@ class RegisterModel extends Model
     public string $password = "";
     public string $confirm_password = "";
 
-    public function register()
+    public function tableName(): string
     {
-        echo "Creating new user";
+        return 'users';
+    }
+
+    public function attributes(): array
+    {
+        return ['first_name', 'last_name', 'email', 'password'];
+    }
+
+    public function save()
+    {
+        $this->password = password_hash($this->password, PASSWORD_DEFAULT);
+        return parent::save();
     }
 
     public function rules(): array

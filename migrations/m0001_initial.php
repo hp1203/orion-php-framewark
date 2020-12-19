@@ -18,7 +18,7 @@ class m0001_initial
             email VARCHAR(255) NOT NULL,
             first_name VARCHAR(255) NOT NULL,
             last_name VARCHAR(255) NOT NULL,
-            status TINYINT NOT NULL,
+            status TINYINT NOT NULL DEFAULT FALSE,
             created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
             updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
         ) ENGINE = INNODB";
