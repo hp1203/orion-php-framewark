@@ -25,8 +25,8 @@ use app\core\form\Field;
         return '</form>';
     }
 
-    public function field(Model $model, $attribute)
+    public function field(Model $model, $attribute, $label = "", $placeholder = "")
     {
-        return new Field($model, $attribute);
+        return new Field($model, $attribute, $label, $placeholder);
     }
  }

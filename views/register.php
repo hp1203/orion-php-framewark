@@ -6,28 +6,28 @@
               <h1 class="h3 mb-3 fw-normal">Register</h1>
                 <div class="row mb-3">
                     <div class="col-md-6 col-sm-12">
-                        <?php echo $form->field($model,'first_name'); ?>
+                        <?php echo $form->field($model,'first_name', 'First Name', 'Enter Your First Name'); ?>
                     </div>
                     <div class="col-md-6 col-sm-12">
-                        <?php echo $form->field($model,'last_name'); ?>
+                        <?php echo $form->field($model,'last_name', 'Last Name', 'Enter Your Last Name'); ?>
                     </div>
                 </div>
                     
                 <div class="row mb-3">
                     <div class="col-md-12 col-sm-12">
-                        <?php echo $form->field($model,'email')->emailField(); ?>
+                        <?php echo $form->field($model,'email', 'Email', 'Enter Your Email')->emailField(); ?>
                     </div>
                 </div>
                 
                 <div class="row mb-3">
                     <div class="col-md-12 col-sm-12">
-                        <?php echo $form->field($model,'password')->passwordField(); ?>
+                        <?php echo $form->field($model,'password', 'Password', 'Enter Your New Password')->passwordField(); ?>
                     </div>
                 </div>
     
                 <div class="row mb-3">
                     <div class="col-md-12 col-sm-12">
-                        <?php echo $form->field($model,'confirm_password')->passwordField(); ?>
+                        <?php echo $form->field($model,'confirm_password', 'Confirm Password', 'Confirm Your Password')->passwordField(); ?>
                     </div>
                 </div>
               <div class="checkbox mb-3">
