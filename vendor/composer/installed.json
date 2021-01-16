@@ -70,6 +70,43 @@
             "install-path": "../graham-campbell/result-type"
         },
         {
+            "name": "himanshupurohit/orion-core",
+            "version": "v1.0.0",
+            "version_normalized": "1.0.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/hp1203/orion-core.git",
+                "reference": "2fd61885c19f21ad0b94cb5e18b4c459dd5ea944"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/hp1203/orion-core/zipball/2fd61885c19f21ad0b94cb5e18b4c459dd5ea944",
+                "reference": "2fd61885c19f21ad0b94cb5e18b4c459dd5ea944",
+                "shasum": ""
+            },
+            "time": "2021-01-16T17:35:53+00:00",
+            "type": "library",
+            "installation-source": "source",
+            "autoload": {
+                "psr-4": {
+                    "himanshupurohit\\orion\\": "./"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Himanshu Purohit",
+                    "email": "himanshu1203@gmail.com"
+                }
+            ],
+            "description": "Simple Php MVC Framework",
+            "support": {
+                "issues": "https://github.com/hp1203/orion-core/issues",
+                "source": "https://github.com/hp1203/orion-core/tree/v1.0.0"
+            },
+            "install-path": "../himanshupurohit/orion-core"
+        },
+        {
             "name": "phpoption/phpoption",
             "version": "1.7.5",
             "version_normalized": "1.7.5.0",

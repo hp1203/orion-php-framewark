@@ -6,7 +6,7 @@
     'aliases' => 
     array (
     ),
-    'reference' => '26abcd53d5426f54f2e26a5791b483e00484728a',
+    'reference' => '78beb4702dbc5e6604223e9d83e5078bfc9c221e',
     'name' => 'himanshupurohit/orion',
   ),
   'versions' => 
@@ -27,7 +27,16 @@
       'aliases' => 
       array (
       ),
-      'reference' => '26abcd53d5426f54f2e26a5791b483e00484728a',
+      'reference' => '78beb4702dbc5e6604223e9d83e5078bfc9c221e',
+    ),
+    'himanshupurohit/orion-core' => 
+    array (
+      'pretty_version' => 'v1.0.0',
+      'version' => '1.0.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '2fd61885c19f21ad0b94cb5e18b4c459dd5ea944',
     ),
     'phpoption/phpoption' => 
     array (

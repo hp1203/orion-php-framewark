@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0bea237dea0ed4ff6bab9646b28b30e9",
+    "content-hash": "21c42ae1b3e14c61472f94080a279ea4",
     "packages": [
         {
             "name": "graham-campbell/result-type",
@@ -71,6 +71,40 @@
                 }
             ],
             "time": "2020-04-13T13:17:36+00:00"
+        },
+        {
+            "name": "himanshupurohit/orion-core",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/hp1203/orion-core.git",
+                "reference": "2fd61885c19f21ad0b94cb5e18b4c459dd5ea944"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/hp1203/orion-core/zipball/2fd61885c19f21ad0b94cb5e18b4c459dd5ea944",
+                "reference": "2fd61885c19f21ad0b94cb5e18b4c459dd5ea944",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "himanshupurohit\\orion\\": "./"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Himanshu Purohit",
+                    "email": "himanshu1203@gmail.com"
+                }
+            ],
+            "description": "Simple Php MVC Framework",
+            "support": {
+                "issues": "https://github.com/hp1203/orion-core/issues",
+                "source": "https://github.com/hp1203/orion-core/tree/v1.0.0"
+            },
+            "time": "2021-01-16T17:35:53+00:00"
         },
         {
             "name": "phpoption/phpoption",
