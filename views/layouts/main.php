@@ -1,5 +1,5 @@
 <?php 
-    use app\core\Application;  
+    use himanshupurohit\orion\Application;  
 ?>
 <!doctype html>
 <html lang="en">

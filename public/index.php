@@ -1,7 +1,7 @@
 <?php 
 
 use app\models\User;
-use app\core\Application;
+use himanshupurohit\orion\Application;
 use app\controllers\AuthController;
 use app\controllers\SiteController;
 

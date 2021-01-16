@@ -1,9 +1,9 @@
 <?php 
 
 namespace app\models;
-use app\core\Model;
-use app\core\DbModel;
-use app\core\Application;
+use himanshupurohit\orion\Model;
+use himanshupurohit\orion\DbModel;
+use himanshupurohit\orion\Application;
 /**
  * Class ContactForm
  * 

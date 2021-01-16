@@ -1,8 +1,8 @@
 <?php 
 
 namespace app\models;
-use app\core\Model;
-use app\core\DbModel;
+use himanshupurohit\orion\Model;
+use himanshupurohit\orion\DbModel;
 /**
  * Class User
  * 

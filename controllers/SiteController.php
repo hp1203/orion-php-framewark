@@ -1,10 +1,10 @@
 <?php 
 
 namespace app\controllers;
-use app\core\Request;
-use app\core\Response;
-use app\core\Controller;
-use app\core\Application;
+use himanshupurohit\orion\Request;
+use himanshupurohit\orion\Response;
+use himanshupurohit\orion\Controller;
+use himanshupurohit\orion\Application;
 use app\models\ContactForm;
 /**
  * Class SiteController

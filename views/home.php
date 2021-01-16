@@ -1,6 +1,6 @@
 <?php 
-use app\core\Application;  
-/** @var $this \app\core\View */
+use himanshupurohit\orion\Application;  
+/** @var $this \himanshupurohit\orion\View */
 $this->title = "Orion - Simple Php MVC Framework";
 ?>
 <div class="container">

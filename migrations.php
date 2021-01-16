@@ -2,7 +2,7 @@
 
 use app\controllers\SiteController;
 use app\controllers\AuthController;
-use app\core\Application;
+use himanshupurohit\orion\Application;
 
 require_once __DIR__.'/vendor/autoload.php';
 

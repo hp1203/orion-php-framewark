@@ -1,7 +1,7 @@
 <?php 
-/** @var $this \app\core\View */
+/** @var $this \himanshupurohit\orion\View */
 /** @var $model \app\models\ContactForm */
-use app\core\Application;
+use himanshupurohit\orion\Application;
 $this->title = "Contact Us";
 ?>
 <div class="container">
@@ -11,7 +11,7 @@ $this->title = "Contact Us";
             <?php echo Application::$app->session->getFlash('success'); ?>
         </div>
     <?php endif;?>
-<?php $form = \app\core\form\Form::begin('','post'); ?>
+<?php $form = \himanshupurohit\orion\form\Form::begin('','post'); ?>
   <fieldset >
     <div class="mb-3">
       <label class="form-label">Email</label>
@@ -28,7 +28,7 @@ $this->title = "Contact Us";
 
     <button type="submit" class="btn btn-primary">Submit</button>
   </fieldset>
-<?php echo \app\core\form\Form::end(); ?>
+<?php echo \himanshupurohit\orion\form\Form::end(); ?>
 
 
 </div>
