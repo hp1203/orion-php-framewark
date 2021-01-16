@@ -3,7 +3,8 @@
 namespace app\core\form;
 
 use app\core\Model;
-use app\core\form\Field;
+use app\core\form\InputField;
+use app\core\form\TextareaField;
 
 /**
  * Class Form
@@ -25,8 +26,13 @@ use app\core\form\Field;
         return '</form>';
     }
 
-    public function field(Model $model, $attribute, $label = "", $placeholder = "")
+    public function inputField(Model $model, $attribute, $label = "", $placeholder = "")
     {
-        return new Field($model, $attribute, $label, $placeholder);
+        return new InputField($model, $attribute, $label, $placeholder);
+    }
+
+    public function textareaField(Model $model, $attribute, $label = "", $placeholder = "")
+    {
+        return new TextareaField($model, $attribute, $label, $placeholder);
     }
  }

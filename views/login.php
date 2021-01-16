@@ -1,3 +1,8 @@
+<?php 
+/** @var $this \app\core\View */
+
+$this->title = "Login";
+?>
 <main class="form-signin text-center">
     <div class="card shadow-sm mb-5 bg-white">
         <div class="card-body">
@@ -6,12 +11,12 @@
               <h1 class="h3 mb-3 fw-normal">Sign in</h1>
               <div class="row mb-3">
                     <div class="col-md-12 col-sm-12">
-                    <?php echo $form->field($model,'email', 'Email', 'Enter Your Email')->emailField(); ?>
+                    <?php echo $form->inputField($model,'email', 'Email', 'Enter Your Email')->emailField(); ?>
                     </div>          
                 </div>
                 <div class="row mb-3">
                     <div class="col-md-12 col-sm-12">
-                    <?php echo $form->field($model,'password', 'Password', 'Enter Your New Password')->passwordField(); ?>
+                    <?php echo $form->inputField($model,'password', 'Password', 'Enter Your New Password')->passwordField(); ?>
                     </div>          
                 </div>
               <div class="checkbox mb-3">

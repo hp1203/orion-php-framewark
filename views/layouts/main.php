@@ -11,7 +11,7 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link rel="stylesheet" href="../app.css">
-    <title>Orion - The Simple Php Framework</title>
+    <title><?php echo $this->title; ?></title>
   </head>
   <body>
   <nav class="navbar navbar-expand-lg navbar-light shadow-sm p-3 mb-5 bg-white">

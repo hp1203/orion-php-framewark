@@ -1,21 +1,34 @@
+<?php 
+/** @var $this \app\core\View */
+/** @var $model \app\models\ContactForm */
+use app\core\Application;
+$this->title = "Contact Us";
+?>
 <div class="container">
 <h1>Contact Us</h1>
-<form action="" method="POST">
+<?php if(Application::$app->session->getFlash('success')): ?>
+        <div class="alert alert-success">
+            <?php echo Application::$app->session->getFlash('success'); ?>
+        </div>
+    <?php endif;?>
+<?php $form = \app\core\form\Form::begin('','post'); ?>
   <fieldset >
     <div class="mb-3">
       <label class="form-label">Email</label>
-      <input type="text" class="form-control" placeholder="Email" name="email">
+      <?php echo $form->inputField($model, 'email', 'Email', 'Enter Your Email')->emailField(); ?>
     </div>
     <div class="mb-3">
       <label class="form-label">Subject</label>
-      <input type="text" class="form-control" placeholder="Subject" name="subject">
+      <?php echo $form->inputField($model, 'subject', 'Subject', 'Enter Subject'); ?>
     </div>
     <div class="mb-3">
       <label class="form-label">Message</label>
-      <input type="text" class="form-control" placeholder="Message" name="message">
+      <?php echo $form->textareaField($model, 'body', 'Message', 'Enter Message'); ?>
     </div>
 
     <button type="submit" class="btn btn-primary">Submit</button>
   </fieldset>
-</form>
+<?php echo \app\core\form\Form::end(); ?>
+
+
 </div>

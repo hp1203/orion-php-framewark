@@ -1,3 +1,8 @@
+<?php 
+/** @var $this \app\core\View */
+
+$this->title = "Register";
+?>
 <main class="form-signin text-center">
     <div class="card shadow-sm mb-5 bg-white">
         <div class="card-body">
@@ -6,28 +11,28 @@
               <h1 class="h3 mb-3 fw-normal">Register</h1>
                 <div class="row mb-3">
                     <div class="col-md-6 col-sm-12">
-                        <?php echo $form->field($model,'first_name', 'First Name', 'Enter Your First Name'); ?>
+                        <?php echo $form->inputField($model,'first_name', 'First Name', 'Enter Your First Name'); ?>
                     </div>
                     <div class="col-md-6 col-sm-12">
-                        <?php echo $form->field($model,'last_name', 'Last Name', 'Enter Your Last Name'); ?>
+                        <?php echo $form->inputField($model,'last_name', 'Last Name', 'Enter Your Last Name'); ?>
                     </div>
                 </div>
                     
                 <div class="row mb-3">
                     <div class="col-md-12 col-sm-12">
-                        <?php echo $form->field($model,'email', 'Email', 'Enter Your Email')->emailField(); ?>
+                        <?php echo $form->inputField($model,'email', 'Email', 'Enter Your Email')->emailField(); ?>
                     </div>
                 </div>
                 
                 <div class="row mb-3">
                     <div class="col-md-12 col-sm-12">
-                        <?php echo $form->field($model,'password', 'Password', 'Enter Your New Password')->passwordField(); ?>
+                        <?php echo $form->inputField($model,'password', 'Password', 'Enter Your New Password')->passwordField(); ?>
                     </div>
                 </div>
     
                 <div class="row mb-3">
                     <div class="col-md-12 col-sm-12">
-                        <?php echo $form->field($model,'confirm_password', 'Confirm Password', 'Confirm Your Password')->passwordField(); ?>
+                        <?php echo $form->inputField($model,'confirm_password', 'Confirm Password', 'Confirm Your Password')->passwordField(); ?>
                     </div>
                 </div>
               <div class="checkbox mb-3">

@@ -1,5 +1,7 @@
 <?php 
-    use app\core\Application;  
+use app\core\Application;  
+/** @var $this \app\core\View */
+$this->title = "Orion - Simple Php MVC Framework";
 ?>
 <div class="container">
     <?php if(Application::$app->session->getFlash('success')): ?>

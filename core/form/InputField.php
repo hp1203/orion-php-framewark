@@ -3,15 +3,16 @@
 namespace app\core\form;
 
 use app\core\Model;
+use app\core\form\BaseField;
 
 /**
- * Class Field
+ * Class InputField
  * 
  * @author Himanshu Purohit <himanshu1203@gmail.com>
  * @package app\core\form
  */
 
- class Field 
+ class InputField extends BaseField
  {
     public const TYPE_TEXT = 'text';
     public const TYPE_EMAIL = 'email';
@@ -25,7 +26,7 @@ use app\core\Model;
     public string $placeholder;
 
     /**
-     * Field Constructor
+     * InputField Constructor
      * 
      * @param \app\core\Model $model
      * @param string $attribute
@@ -34,27 +35,8 @@ use app\core\Model;
     public function __construct(Model $model, string $attribute, string $label, string $placeholder)
     {
         $this->type = self::TYPE_TEXT;
-        $this->label = $label;
         $this->placeholder = $placeholder;
-        $this->model = $model;
-        $this->attribute = $attribute;
-    }
-
-    public function __toString()
-    {
-        return sprintf('
-            <label for="inputLastName" class="visually-hidden">%s</label>
-            <input type="%s" id="inputLastName" value="%s" placeholder="%s" autofocus="" name="%s" class="form-control %s">
-            <div class="invalid-feedback">
-                %s
-            </div>
-        ', $this->label, 
-        $this->type,
-        $this->model->{$this->attribute}, 
-        $this->placeholder, 
-        $this->attribute,
-        $this->model->hasError($this->attribute) ? 'is-invalid' : '',
-        $this->model->getFirstError($this->attribute));
+        parent::__construct($model, $attribute, $label);
     }
 
     public function passwordField()
@@ -67,5 +49,17 @@ use app\core\Model;
     {
         $this->type = self::TYPE_EMAIL;
         return $this;
+    }
+
+    public function renderInput(): string
+    {
+        return sprintf('
+            <input type="%s" id="inputLastName" value="%s" placeholder="%s" autofocus="" name="%s" class="form-control %s">
+        ',
+        $this->type,
+        $this->model->{$this->attribute}, 
+        $this->placeholder, 
+        $this->attribute,
+        $this->model->hasError($this->attribute) ? 'is-invalid' : '');
     }
  }
