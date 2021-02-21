@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "vite"
   },
   "repository": {
     "type": "git",
@@ -16,9 +16,11 @@
     "url": "https://github.com/hp1203/orion-php-framewark/issues"
   },
   "homepage": "https://github.com/hp1203/orion-php-framewark#readme",
-  "dependencies": {
-    "autoprefixer": "^10.2.3",
-    "postcss": "^8.2.4",
-    "tailwindcss": "^2.0.2"
+  "dependencies": {},
+  "devDependencies": {
+    "autoprefixer": "^10.2.4",
+    "postcss": "^8.2.6",
+    "tailwindcss": "^2.0.3",
+    "vite": "^2.0.1"
   }
 }

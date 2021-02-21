@@ -26,7 +26,7 @@ class AuthController extends Controller
 
     public function login(Request $request, Response $response)
     {   
-        $this->setLayout('auth');
+        $this->setLayout('main');
         $loginForm = new LoginForm();
         if($request->isPost()){
             $loginForm->loadData($request->getBody());
